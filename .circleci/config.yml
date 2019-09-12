@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  colony: ddovbii/colony@dev:alpha
+  colony: ddovbii/colony@0.0.1
 jobs:
   one:
     docker:

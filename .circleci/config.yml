@@ -1,13 +1,14 @@
 version: 2.1
 
 orbs:
-  colony: ddovbii/colony@0.0.1
+  colony: ddovbii/colony@dev:alpha
 jobs:
   one:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - colony/start-sandbox:
+          sandbox-name: "test-sandbox"
           blueprint: "promotions-manager-all-aws"
       - run: echo "A first hello"
       - run: sleep 25

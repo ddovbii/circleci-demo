@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   colony: ddovbii/colony@dev:alpha
 jobs:
-  one:
+  one: 
     docker:
       - image: circleci/ruby:2.4.1
     steps:
